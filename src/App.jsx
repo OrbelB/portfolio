@@ -8,6 +8,7 @@ import Footer from './modules/footer/Footer'
 import Service from './modules/services/Service'
 import Testi from './modules/testimonials/Testi'
 
+
 function App() {
   return (
     <>
@@ -16,7 +17,6 @@ function App() {
         <About/>
         <Service/>
         <EX/>
-        <Testi/>
         <Contact/>
         <Footer/>
 

@@ -1,0 +1,100 @@
+header{
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+.header__container{
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/*================CTA================*/
+.cta{
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+/*================HEADER SOCIALS================*/
+.header__socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    gap: .4rem;
+    left: 0;
+    bottom: 3rem;
+    background: linear-gradient(var(--color-bg-varit), transparent);
+
+}
+.header__socials::after{
+    content: '';
+    width: 2rem;
+    height: 1px;
+    background-color: var(--color-primary);
+}
+
+/*================Me================*/
+
+.self_img{
+    background: linear-gradient(var(--color-primary),transparent);
+    width: 25rem;
+    height:28rem;
+    position: absolute;
+    left: calc(50% - 12.5rem);
+    margin-top: 4rem;
+    border-radius: 12rem 12rem 0rem 0rem;
+    overflow: hidden;
+}
+
+.hello_sign{
+    position: relative;
+    top: 9rem;
+    text-shadow: 2px 2px var(--color-bg);
+    animation: translate 15s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes translate {
+    0%{transform: translate(0px, -2rem);opacity: .1;}
+    50%{transform: translate(0px, 2rem);opacity: 1;}
+    100%{transform: translate(0px, -2rem); opacity: .1;}
+}
+
+/*=================SCROLL DOWN=================*/
+
+.scroll__down{
+    position: absolute;
+    right:-2.3rem;
+    bottom: 2.55rem;
+    font-weight: 200;
+    font-size: 0.9rem;
+    text-orientation: upright;
+    writing-mode: vertical-rl;
+    background: linear-gradient(var(--color-bg-varit), transparent);
+}
+.scroll__down::after{
+    content: '-';
+     width: 2rem;
+    height: 1px;
+    color: var(--color-primary);
+}
+
+
+/*=================Media Queries Med=================*/
+@media screen and (max-width:1024px) {
+    header{
+        height: 68vh;
+    }
+}
+
+/*=================Media Queries small=================*/
+@media screen and (max-width:600px) {
+    header{
+        height: 100vh;
+    }
+    .header__socials, .scroll__down{
+        display: none;
+    }
+  }

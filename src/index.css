@@ -15,7 +15,7 @@
   /*THIS ARE CSS VARIABLES*/
   --color-bg:#d10fb7;
   --color-bg-varit:rgb(207, 7, 87);
-  --color-primary:rgb(255, 0, 72);
+  --color-primary:rgb(255, 162, 162);
   --color-primary-variant: rgb(200, 40, 85);
   --color-white: white;
   --color-light: rgb(255, 255, 255, 0.6);
@@ -60,6 +60,7 @@ h1{
 /*div and stuff*/
 section{
   margin-top: 8rem;
+  height: 100vh;
 }
 section > h2, section >h5{
   text-align: center;
